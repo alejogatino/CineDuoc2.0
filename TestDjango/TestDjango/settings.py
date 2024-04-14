@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'TestDjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'dcr1iuuyw7k46ivq_high',
+        'USER' : 'ADMIN_PAZ',
+        'PASSWORD' : 'Z5LSC74zNgxw',
+        'HOST' : 'adb.sa-santiago-1.oraclecloud.com',
+        'PORT' : '1522',
     }
 }
 
