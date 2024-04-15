@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'TestDjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME':  '127.0.0.1:1521/orcl',
+        'NAME':  'dcr1iuuyw7k46ivq_high',
         'USER' : 'ADMIN_PAZ',
         'PASSWORD' : 'Z5LSC74zNgxw',
         'HOST' : 'adb.sa-santiago-1.oraclecloud.com',
