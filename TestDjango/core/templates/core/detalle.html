@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foro</title>
-    <link rel="stylesheet" href="{% static 'tasks/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
@@ -15,11 +15,11 @@
             <nav class="navigation hide" id="navigation">
                 <span class="close-icon" id="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a href="posts.html">Posteos</a></li>
-                    <li class="nav-item"><a href="detalle.html">Popular</a></li>
-                    <li class="nav-item"><a href="formulario.html">Registrarse</a></li>
-                    <li class="nav-item"><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a href="{% url 'index' %}">Inicio</a></li>
+                    <li class="nav-item"><a href="{% url 'posts' %}">Posteos</a></li>
+                    <li class="nav-item"><a href="{% url 'detalle' %}">Popular</a></li>
+                    <li class="nav-item"><a href="{% url 'formulario' %}">Registrarse</a></li>
+                    <li class="nav-item"><a href="{% url 'iniciar-sesion' %}">Iniciar Sesión</a></li>
                 </ul>
             </nav>
             <a class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
@@ -148,6 +148,6 @@
             <footer>
                 <span>&copy;  Selmi Abderrahim | Todos Los Derechos Reservados</span>
             </footer>
-            <script src="main.js"></script>
+            <script src="{% static 'js/main.js' %}"></script>
         </body>
         </html>
